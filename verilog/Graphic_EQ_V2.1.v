@@ -61,14 +61,14 @@ module Graphic_EQ_V2 (
 	);
 
 
-	/*avconf conf(
-		//	Host Side
-						.CLOCK_50(CLOCK_50),
-						.reset(reset),
-						//	I2C Side
-						.I2C_SCLK(I2C_SCLK),
-						.I2C_SDAT(I2C_SDAT)
-	);*/
+avconf conf(
+	//	Host Side
+	.CLOCK_50(CLOCK_50),
+	.reset(reset),
+	//	I2C Side
+	.I2C_SCLK(I2C_SCLK),
+	.I2C_SDAT(I2C_SDAT)
+);
 
 equalizer_ctrl eq_left(
 	.enter(set),
